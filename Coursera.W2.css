@@ -1,0 +1,159 @@
+<style>
+
+* {
+	box-sizing: border-box;
+	margin: 5;
+	padding: 5;
+}
+
+body {
+	background-color: #F1F3F4; /*Колір загального фону*/
+}
+
+#box1 {
+    position: relative;/*Позиція у просторі на сторінці*/
+	top: -10px; /*Відступ*/
+	left: -300px; /*Відступ*/
+	
+	background-color: #DAE0F1;  /*Колір фону в рамці*/
+	padding: 10px 10px 10px 10px; /*Відступи від країв тексту в таблиці*/
+	border: 5px solid #000000; /*Розмір та колір рамки*/
+	width: 100px;
+	height: 0px; /*Підняти нижню рамку*/
+	
+	margin:auto; /*Не зрозуміло чи працює??????*/
+
+	margin-right: auto;
+	margin-left: auto;
+
+	margin-top: 5px; /*Відступ зверху*/
+	overflow: auto;  /*Автоналаштовування розміщення тексту в таблиці*/
+
+
+}
+#content {
+	background-color: #90EE90;
+	margin:auto; /*Не зрозуміло чи працює??????*/
+}
+
+#box2 {
+	position: relative; 
+
+	top: -200px; 
+	left: 40px;
+
+	background-color: #DAE0F1;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #000000;
+	width: 400px;
+	height: 100px; /*Підняти нижню рамку*/
+
+	margin:auto;  /*Не зрозуміло чи працює??????*/
+
+	margin-right: auto;
+	margin-left: auto;
+
+	margin-top: 50px;
+	overflow: auto;
+	
+}
+#content {
+	background-color: #90EE90;
+}
+
+#box3 {
+	background-color: #DAE0F1;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #000000;
+	width: 400px;
+	height: 100px; /*Підняти нижню рамку*/
+	
+	margin:auto;   /*Не зрозуміло чи працює??????*/
+
+	margin-top: 50px;
+
+	margin-right: auto;
+	margin-left: auto;
+
+	overflow: auto;
+	position: relative;
+	top: -390px;
+	left: 380px;
+}
+#content {
+	background-color: #6DB7FC; /*Колір фону під текстом*/
+}
+
+/* Simple Responsive Framework. */
+.row {
+	width: 100%
+}
+
+/********** Large divices only **********/
+@media (min-width: 992px) {
+	#box1 {
+ 	   width: 300px;  /*Ширина таблиці*/
+ 	   height: 110px; /*Довжина таблиці*/
+
+	}
+	#box2 {
+	   width: 300px;
+	   height: 110px;
+	}
+	#box3 {
+	   width: 300px;
+	   height: 110px;
+	}
+}
+
+ /********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	#box1 {
+		width: 300px;
+	  	height: 110px;
+	}
+	#box2 {
+		width: 300px;
+		height: 110px;
+		position: relative;
+			top: -200px;
+			left: 40px;
+
+	}
+	#box3 {
+	   width: 640px;
+	   height: 55px;
+			position: relative;
+			top: -240px;
+			left: -130px;
+			
+	}
+}
+
+ /********** Small devices only **********/
+@media (min-width: 500px) and (max-width: 767px) {
+	#box1 {
+		width: 300px;
+	  	height: 110px;
+	}
+	#box2 {
+		width: 300px;
+		height: 110px;
+			position: relative;
+			top: -40px;
+			left: -300px;
+	}
+	#box3 {
+	   	width: 300px;
+	  	height: 110px;
+			position: relative;
+			top: -70px;
+			left: -300px;
+	}
+}
+
+</style>
+</head>
+<body>
+
+	<h1 align="center">Our Menu</h1>
